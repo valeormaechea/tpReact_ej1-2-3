@@ -4,8 +4,8 @@ import Button from "react-bootstrap/Button";
 const Saludo = (props) => {
   const [claveMsje, setClaveMsje] = useState("");
   return (
-    <div className="p-4">
-      <h1 className="display-4">
+    <div className="p-4 text-center">
+      <h1 className="display-4 p-3">
         Hello {props.nombreSaludo}
         {claveMsje}!
       </h1>
@@ -13,7 +13,7 @@ const Saludo = (props) => {
         variant="warning"
         onClick={() => setClaveMsje(" (from changed state)")}
       >
-        Click me
+        Hazme click
       </Button>
     </div>
   );
